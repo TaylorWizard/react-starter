@@ -1,0 +1,4 @@
+// 告诉 Babel，编译 JavaScript 代码的时候要用这两个 presets 编译
+{
+  "presets": ["es2015", "react"]
+}
