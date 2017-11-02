@@ -1,0 +1,47 @@
+.transform {
+  position: relative;
+  display: block;
+  left: 50%;
+  top: 100px;
+  width: 102px;
+  height: 100px;
+  //border: 1px solid red;
+  .cube {
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid deepskyblue;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  .cube-1 {
+    opacity: 1;
+    transform: scale(1, 1);
+    filter: Alpha(opacity=1);
+  }
+  //.cube-2 {
+  //  opacity: 0;
+  //  transform: scale(0, 0);
+  //  filter: Alpha(opacity=0);
+  //}
+  &.transform:hover {
+    .cube-1 {
+      transform: scale(0, 0);
+      transform-origin: top right;
+      opacity: 1;
+      filter: Alpha(opacity=1);
+    }
+    //.cube-2 {
+    //  transform: scale(1, 1);
+    //  opacity: 1;
+    //  filter: Alpha(opacity=1);
+    //  transform-origin: top left;
+    //}
+  }
+  //.transform:hover {
+  //  &.transform {
+
+  //  }
+  //}
+}
